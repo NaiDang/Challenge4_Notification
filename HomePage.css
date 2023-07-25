@@ -1,0 +1,142 @@
+body{
+    background: #F6FAFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    /* height: 100vh; */
+}
+.container{
+    width:620px ;
+    border-radius: 16px;
+    background: #FFF;
+}
+.content{
+    padding: 26px 16px 56px 16px;
+}
+.notifications{
+    display: flex;
+    gap: 10px;
+}
+.notifications .text{
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.notifications .number{ 
+    border-radius: 8px;
+    background: #0A317B;
+    color: #DDE7EE;
+    margin-right: 10px;
+}
+.number span{
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; 
+    padding: 4px 9px 4px 9px;
+}
+.notifications button{
+    border: none;
+    background: none;
+    color: #5E6778;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0px 0px 0px 321px;
+}
+.accounts > div:not(.rizky-hasanddin):not(.nathan-peterson) {
+    border-radius: 8px;
+    background: #F7FAFD;
+    display: flex;
+    margin-top: 24px;
+}
+.rizky-hasanddin,.nathan-peterson{
+    border-radius: 8px;
+    display: flex;
+    margin-top: 24px;
+}
+.avatar{
+    padding: 16px 0px 16px 16px;
+}
+.title-content{
+    padding: 16px 0px 16px 16px;
+}
+.title .name{
+    color: #1C202B;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18.2px;
+}
+.title .noti-content{
+    color: #5E6778;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.2px;
+}
+.title .des-content{
+    color: #5E6778;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18.2px;
+}
+.time{
+    color: #939DAE;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.2px;
+}
+.un-read-icon{
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background: #F65351;
+    margin:22px 0px 42px 5px;
+}
+.message{
+    border-radius: 4.8px;
+    border: 1px solid #E5EFFA;
+    margin: 7px 32px 0px 0px;
+}
+.message div{
+    color: #5E6778;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.2px;
+    padding: 17px 43px 16px 17px;
+}
+.kimberly-smith .avat{
+    padding: 16px 32px 16px 16px;
+    margin-left: 151px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 400px;
+    }
+    .notifications button{
+        padding: 0px 0px 0px 100px;
+    }
+    .title-content{
+        padding: 16px 24px 16px 16px;   
+    }
+}
