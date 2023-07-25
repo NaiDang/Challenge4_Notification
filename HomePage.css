@@ -32,16 +32,9 @@ body{
     color: #DDE7EE;
     margin-right: 10px;
 }
-.number span{
-    display: flex;
-    align-items: center;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px; 
-    padding: 4px 9px 4px 9px;
-}
+#mark_all {
+    cursor: pointer;
+  }
 .notifications button{
     border: none;
     background: none;
@@ -54,13 +47,14 @@ body{
     line-height: normal;
     padding: 0px 0px 0px 321px;
 }
-.accounts > div:not(.rizky-hasanddin):not(.nathan-peterson) {
+/* .accounts > div:not(.rizky-hasanddin):not(.nathan-peterson) { */
+.mark-webber, .angela-gray,.jacob-thompson{
     border-radius: 8px;
-    background: #F7FAFD;
+    /* background: #F7FAFD; */
     display: flex;
     margin-top: 24px;
 }
-.rizky-hasanddin,.nathan-peterson{
+.rizky-hasanddin,.nathan-peterson,.kimberly-smith,.anna-kim{
     border-radius: 8px;
     display: flex;
     margin-top: 24px;
@@ -103,13 +97,6 @@ body{
     font-weight: 400;
     line-height: 18.2px;
 }
-.un-read-icon{
-    width: 8px;
-    height: 8px;
-    border-radius: 10px;
-    background: #F65351;
-    margin:22px 0px 42px 5px;
-}
 .message{
     border-radius: 4.8px;
     border: 1px solid #E5EFFA;
@@ -128,7 +115,29 @@ body{
     padding: 16px 32px 16px 16px;
     margin-left: 151px;
 }
-
+  .unread .title-content .title span:last-child::after {
+    content: " ";
+    background-color: #F65351;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.unread {
+    background-color: #F7FAFD;
+  }
+#notifes {
+    background-color: var(--Blue);
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    font-weight: 800;
+    border-radius: 0.5rem;
+    padding: 4px 9px 4px 0px;
+  }
 @media (max-width: 768px) {
     .container{
         width: 400px;
