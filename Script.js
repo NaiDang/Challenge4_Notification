@@ -1,6 +1,6 @@
 const unreadMessages = document.querySelectorAll(".unread");
 const unread = document.getElementById("notifes");
-const markAll = document.getElementById("mark_all");
+const markAll = document.getElementById("mark-all");
 unread.innerText = unreadMessages.length;
 
 unreadMessages.forEach((message) => {
@@ -9,14 +9,6 @@ unreadMessages.forEach((message) => {
     updateUnreadCount();
   });
 });
-
-document.addEventListener("click", (event) => {
-  const selectedElement = document.querySelector(".selected");
-  if (selectedElement && !selectedElement.contains(event.target)) {
-    selectedElement.classList.remove("selected");
-  }
-});
-
 markAll.addEventListener("click", () => {
   unreadMessages.forEach((message) => {
     message.classList.remove("unread");

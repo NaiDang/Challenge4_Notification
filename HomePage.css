@@ -1,24 +1,32 @@
-body{
+body {
     background: #F6FAFD;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
-    /* height: 100vh; */
+    height: 150vh;
 }
-.container{
-    width:620px ;
+
+.container {
+    width: 620px;
     border-radius: 16px;
     background: #FFF;
 }
-.content{
+
+.content {
     padding: 26px 16px 56px 16px;
 }
-.notifications{
+
+.notifications {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
 }
-.notifications .text{
+
+.count {
+    display: flex;
+}
+
+.notifications .text {
     color: #000;
     font-family: Roboto;
     font-size: 20px;
@@ -26,16 +34,29 @@ body{
     font-weight: 700;
     line-height: normal;
 }
-.notifications .number{ 
+
+.unread {
+    background-color: #F7FAFD;
+}
+
+#notifes {
+    color: #DDE7EE;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 4px 9px 4px 9px;
     border-radius: 8px;
     background: #0A317B;
-    color: #DDE7EE;
-    margin-right: 10px;
+    margin-left: 10px;
 }
-#mark_all {
+
+#mark-all {
     cursor: pointer;
-  }
-.notifications button{
+}
+
+.notifications button {
     border: none;
     background: none;
     color: #5E6778;
@@ -45,27 +66,29 @@ body{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding: 0px 0px 0px 321px;
 }
-/* .accounts > div:not(.rizky-hasanddin):not(.nathan-peterson) { */
-.mark-webber, .angela-gray,.jacob-thompson{
+
+.mark-webber,
+.angela-gray,
+.jacob-thompson,
+.rizky-hasanddin,
+.nathan-peterson,
+.kimberly-smith,
+.anna-kim {
     border-radius: 8px;
-    /* background: #F7FAFD; */
     display: flex;
     margin-top: 24px;
 }
-.rizky-hasanddin,.nathan-peterson,.kimberly-smith,.anna-kim{
-    border-radius: 8px;
-    display: flex;
-    margin-top: 24px;
-}
-.avatar{
+
+.avatar {
     padding: 16px 0px 16px 16px;
 }
-.title-content{
+
+.title-content {
     padding: 16px 0px 16px 16px;
 }
-.title .name{
+
+.title .name  {
     color: #1C202B;
     font-family: Roboto;
     font-size: 14px;
@@ -73,7 +96,8 @@ body{
     font-weight: 700;
     line-height: 18.2px;
 }
-.title .noti-content{
+
+.title .noti-content {
     color: #5E6778;
     font-family: Roboto;
     font-size: 14px;
@@ -81,7 +105,8 @@ body{
     font-weight: 400;
     line-height: 18.2px;
 }
-.title .des-content{
+
+.title .des-content {
     color: #5E6778;
     font-family: Roboto;
     font-size: 14px;
@@ -89,7 +114,8 @@ body{
     font-weight: 700;
     line-height: 18.2px;
 }
-.time{
+
+.time {
     color: #939DAE;
     font-family: Roboto;
     font-size: 14px;
@@ -97,12 +123,14 @@ body{
     font-weight: 400;
     line-height: 18.2px;
 }
-.message{
+
+.message {
     border-radius: 4.8px;
     border: 1px solid #E5EFFA;
-    margin: 7px 32px 0px 0px;
+    margin: 7px 16px 0px 0px;
 }
-.message div{
+
+.message div {
     color: #5E6778;
     font-family: Roboto;
     font-size: 14px;
@@ -111,11 +139,12 @@ body{
     line-height: 18.2px;
     padding: 17px 43px 16px 17px;
 }
-.kimberly-smith .avat{
-    padding: 16px 32px 16px 16px;
-    margin-left: 151px;
+
+.kimberly-smith .avat {
+    margin: 16px 0px 0px 196px;
 }
-  .unread .title-content .title span:last-child::after {
+
+.unread .title-content .title::after {
     content: " ";
     background-color: #F65351;
     width: 8px;
@@ -124,28 +153,29 @@ body{
     border-radius: 10px;
     margin-left: 5px;
 }
-.unread {
-    background-color: #F7FAFD;
-  }
-#notifes {
-    background-color: var(--Blue);
-    margin-left: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--White);
-    font-weight: 800;
-    border-radius: 0.5rem;
-    padding: 4px 9px 4px 0px;
-  }
+
 @media (max-width: 768px) {
-    .container{
+    .container {
         width: 400px;
     }
-    .notifications button{
-        padding: 0px 0px 0px 100px;
+    
+    .notifications {
+    margin: 26px 0px 0px 16px;
     }
-    .title-content{
-        padding: 16px 24px 16px 16px;   
+    .title-content {
+        padding: 16px 24px 16px 16px;
+    }
+
+    .message {
+        margin: 7px -4px 0px;
+    }
+
+    .message div {
+        padding: 17px 17px 16px 17px;
+    }
+
+    .kimberly-smith .avat {
+        padding: 0px 16px 0px 0px;
+        margin-left: 0px;
     }
 }
