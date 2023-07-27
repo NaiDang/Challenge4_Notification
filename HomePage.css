@@ -14,12 +14,17 @@ body {
 }
 
 .content {
-    padding: 26px 16px 36px 16px;
+    padding: 24px 16px 36px 16px;
+}
+
+span {
+    margin: 0;
 }
 
 .notifications {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 24px;
 }
 
 .count {
@@ -67,27 +72,40 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    padding: 0;
 }
 
 .mark-webber,
 .angela-gray,
 .jacob-thompson,
-.rizky-hasanddin,
 .nathan-peterson,
-.kimberly-smith,
 .anna-kim {
     border-radius: 8px;
     display: flex;
+    margin-bottom: 16px;
+    padding: 16px 19px 16px 16px;
+}
+
+.kimberly-smith{
+    border-radius: 8px;
+    display: flex;
     margin-top: 16px;
+    padding: 15px 16px 25px 16px;
 }
-
+.rizky-hasanddin {
+    border-radius: 8px;
+    display: flex;
+    margin-top: 16px;
+    padding: 15px 16px 15px 16px;
+}
 .avatar {
-    padding: 16px 0px 16px 16px;
+    margin-right: 16px;
 }
 
-.title-content {
+/*
+.title-content,.title-contentt {
     padding: 16px 0px 16px 16px;
-}
+} */
 
 .title .name {
     color: #1C202B;
@@ -128,7 +146,7 @@ body {
 .message {
     border-radius: 4.8px;
     border: 1px solid #E5EFFA;
-    margin: 7px 15px 0px 0px;
+    margin: 7px 0px 0px 0px;
 }
 
 .message div {
@@ -142,7 +160,8 @@ body {
 }
 
 .kimberly-smith .avat {
-    margin: 15px 0px 0px 197px;
+    margin: 0px 0px 0px 196px;
+    display: flex;
 }
 
 .unread .title-content .title::after {
@@ -156,29 +175,26 @@ body {
 }
 
 @media (max-width: 768px) {
-    body{
+    body {
         padding: 0 0;
     }
+
     .container {
         width: 400px;
     }
-    .content {
-        padding: 24px 16px 65px 16px;
-    }
-    .title-content {
-        padding: 16px 19px 16px 16px;
-    }
-
-    .message {
-        margin: 7px -4px 0px;
-    }
-
-    .message div {
-        padding: 17px 13px 16px 17px;
-    }
 
     .kimberly-smith .avat {
-        padding: 0px 16px 0px 0px;
         margin-left: 0px;
+        margin-left: 10px;
+    }
+    .message div{
+        padding: 17px 17px 16px 17px;
+    }
+    #notifes{
+        font-size: 16px;
+    }
+    
+    .kimberly-smith .avat {
+        display: block;
     }
 }
